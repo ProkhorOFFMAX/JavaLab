@@ -1,0 +1,11 @@
+package ru.spbstu.telematics.Prokhorov.lab2;
+
+public class MainExample {
+
+	public static void main(String[] args) {
+		int[] q= new int[10]; 
+		q[1]=2;
+		q=new int[20];
+		System.out.print(q[1]);
+	}
+}

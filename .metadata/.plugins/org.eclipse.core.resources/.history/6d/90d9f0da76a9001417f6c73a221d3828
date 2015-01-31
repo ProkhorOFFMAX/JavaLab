@@ -1,0 +1,33 @@
+package ru.spbstu.telematics.Prokhorov.lab2;
+
+public class MainExample {
+
+	public static void main(String[] args) {
+		MyArrayQueue<Integer>Q =new MyArrayQueue<Integer>();//создание
+		System.out.print("Размер очереди на данный момент = "+ Q.size()+ "\n");
+		Q.add(1);
+		System.out.print("Размер очереди после добавления = "+ Q.size()+ "\n");
+		Q.add(2);
+		System.out.print("Размер очереди после добавления = "+ Q.size()+ "\n");
+		System.out.print(Q.get()+ " ");
+		System.out.print(Q.get()+ " ");
+		System.out.print(Q.get()+ " ");
+		System.out.print(Q.get()+ "\n ");
+		
+		for(int i=0; i<8; i++)
+			Q.add(i);
+		//Q.add(8);
+		//Q.get();
+		//Q.add(9);
+		//for(int i=0; i<9; i++)
+		//	System.out.print(Q.get()+ " ");
+		System.out.print("Размер очереди после добавления = "+ Q.size()+ "\n");
+		for (Integer o: Q){
+			System.out.print(o + " ");
+			}
+		
+		System.out.print("\n");
+		for(int i=0; i<8; i++)
+					System.out.print(Q.get()+ " ");
+	}
+}

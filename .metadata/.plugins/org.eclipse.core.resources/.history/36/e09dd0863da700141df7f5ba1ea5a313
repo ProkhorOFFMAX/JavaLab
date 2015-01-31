@@ -1,0 +1,8 @@
+package ru.spbstu.telematics.Prokhorov.lab2;
+
+public class MyArrayQueue<T> 
+				implements IArrayQueue, Iterable<T>
+{
+
+	
+}

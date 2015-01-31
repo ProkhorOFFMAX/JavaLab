@@ -1,0 +1,24 @@
+package ru.spbstu.telematics.Prokhorov.lab2;
+
+public class MainExample {
+
+	public static void main(String[] args) {
+		MyArrayQueue<Integer>Q =new MyArrayQueue<Integer>();//создание
+
+
+		
+		//for(int i=0; i<5; i++)
+			Q.add(1);
+			Q.add(2);
+
+
+
+		for(Integer x : Q){
+			System.out.println(x);
+			}
+
+		
+		
+		
+	}
+}

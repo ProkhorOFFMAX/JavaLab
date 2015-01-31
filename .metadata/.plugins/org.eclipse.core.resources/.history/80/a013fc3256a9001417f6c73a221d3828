@@ -1,0 +1,18 @@
+package ru.spbstu.telematics.Prokhorov.lab2;
+
+public class MyArrayQueue<T> 
+				implements IArrayQueue, Iterable<T>
+{
+	int Size_QUEUE_ARRAY;
+	T[] QuArData;
+	int QuArEnd;
+	int QuArBegin;
+	int len;
+	
+	
+	public  MyArrayQueue(){
+		Size_QUEUE_ARRAY=8;
+		T[] QuArData = (T[]) new Object[Size_QUEUE_ARRAY];
+		
+	}
+}

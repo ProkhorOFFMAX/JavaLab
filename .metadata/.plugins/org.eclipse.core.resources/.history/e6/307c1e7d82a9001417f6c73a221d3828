@@ -1,0 +1,37 @@
+package ru.spbstu.telematics.Prokhorov.lab2;
+
+public class MainExample {
+
+	public static void main(String[] args) {
+		 
+		MyArrayQueue<String> firstTest = new MyArrayQueue<String>();
+		
+		System.out.println("Изначальный размер массива =8" );
+		firstTest.add("A");
+		System.out.println("Размер очереди = "+ firstTest.size() );
+		firstTest.add("B");
+		System.out.println("Размер очереди = "+ firstTest.size() );
+		firstTest.add("C");
+		System.out.println("Размер очереди = "+ firstTest.size() );
+		firstTest.add("D");
+		System.out.println("Размер очереди = "+ firstTest.size() );
+		firstTest.add("I");
+		System.out.println("Размер очереди = "+ firstTest.size() );
+		firstTest.add("F");
+		System.out.println("Размер очереди = "+ firstTest.size() );
+		firstTest.add("G");
+		System.out.println("Размер очереди = "+ firstTest.size() );
+		firstTest.add("H");
+		System.out.println("Размер очереди = "+ firstTest.size() );
+		firstTest.add("I");
+		firstTest.add("J");
+		System.out.println("Вывод очереди" );
+		for(String x : firstTest)
+		System.out.println(x );
+		
+
+		
+		
+		
+	}
+}

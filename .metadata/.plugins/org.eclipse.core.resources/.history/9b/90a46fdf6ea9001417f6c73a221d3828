@@ -1,0 +1,13 @@
+package ru.spbstu.telematics.Prokhorov.lab2;
+
+public class MainExample {
+
+	public static void main(String[] args) {
+		MyArrayQueue<Integer>Q =new MyArrayQueue<Integer>();//создание
+		System.out.print("–азмер очереди на данный момент "+ Q.size()+ "\n");
+		Q.add(1);
+		System.out.print("–азмер очереди после добавлени€ "+ Q.size()+ "\n");
+		Q.add(2);
+		System.out.print(Q.get());
+	}
+}

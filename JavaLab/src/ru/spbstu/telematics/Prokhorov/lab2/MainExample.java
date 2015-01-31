@@ -3,7 +3,7 @@ package ru.spbstu.telematics.Prokhorov.lab2;
 public class MainExample {
 
 	public static void main(String[] args) {
-		MyArrayQueue<String>Q =new MyArrayQueue<String>();//*создание
+		MyArrayQueue<String>Q =new MyArrayQueue<String>();// голова
 		Q.add("Первый");
 		Q.add("Второй"); 
 		Q.add("Третий"); 

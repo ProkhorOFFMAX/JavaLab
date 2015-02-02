@@ -1,12 +1,12 @@
-п»їpackage ru.spbstu.telematics.Prokhorov.lab2;
+package ru.spbstu.telematics.Prokhorov.lab2;
 
 import java.util.Iterator;
 
 public class MyArrayQueue<T> 
 				implements IArrayQueue, Iterable<T>
 {
-	int CAPACITI_QUEUE_ARRAY; 	//СЂР°Р·РјРµСЂ РјР°СЃСЃРёРІР°
-	T[] QuArData; 				//РјР°СЃСЃРёРІ
+	int CAPACITI_QUEUE_ARRAY; 	//размер массива
+	T[] QuArData; 				//Массив
 	int QuArEnd;				
 	int QuArBegin;
 	int size_;
@@ -51,7 +51,7 @@ public class MyArrayQueue<T>
 	}
 
 	public void expansionQuAr(){
-		rotate(CAPACITI_QUEUE_ARRAY-QuArBegin); //СЃРґРІРёРі РЅР°С‡Р°Р»Р° РѕС‡РµСЂРµРґРё Рє РЅР°С‡Р°Р»Сѓ РјР°СЃСЃРёРІР°
+		rotate(CAPACITI_QUEUE_ARRAY-QuArBegin); //сдвиг начала очереди к началу массива
 		int newCapaciti=CAPACITI_QUEUE_ARRAY*2;
 		T[] Temp = (T[]) new Object[newCapaciti];
 		for (int i=0; i<CAPACITI_QUEUE_ARRAY; i++){
@@ -65,7 +65,7 @@ public class MyArrayQueue<T>
 
 	@Override
 	public void rotate(int posNum) {
-		posNum=posNum % CAPACITI_QUEUE_ARRAY; //РЈСЃС‚СЂР°РЅРµРЅРёРµ Р»РёС€РЅРёС… РїСЂРѕРіРѕРЅРѕРІ
+		posNum=posNum % CAPACITI_QUEUE_ARRAY; //Устранение лишних прогонов
 		for (int i=0; i<posNum; i++){
 			T temp=QuArData[CAPACITI_QUEUE_ARRAY-1];
 			for (int j=CAPACITI_QUEUE_ARRAY-1; j > 0; --j)
